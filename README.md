@@ -4,9 +4,13 @@ The sample consists of an Angular mono repo in which any third party framework a
 The sample consists of the below applications and files :
 
 BaseApp -> Angular host application
+
 ExtComp - > Angular third party application
+
 mfe4-React -> React third party application
+
 node-js-server -> The server application which provides the compiled files of third party application to host application
+
 CustomAnalystModuleConfig.json -> the file which contains the third party application information which would be read by node-js-server and and then pass it to host application
 to load the third party application.
 
