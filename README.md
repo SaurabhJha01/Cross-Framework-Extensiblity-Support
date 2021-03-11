@@ -71,7 +71,7 @@ as modifying the hoist angular application where 3 different functionalities of 
 
 7. To see thi third party angular application, click on the add icon and it can also be seen as interacting and modifying the default behaviour of host application.
 
-8. So, in a sinlge host application we can see both these third party applications one REact and other one Angular
+8. So, in a single host application we can see both these third party applications one React and other one Angular
 can be loaded and vapability has been provided to them to not only plug their individual capability but also use
 the host application features and even go to the extent of modifying yhe default behaviour of host application.
 
