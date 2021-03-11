@@ -1,0 +1,32 @@
+<div class="alert-info" id="addPanel">
+    <div class="hostBtns">
+        <button id="vctrBtn" (click)="addVectorLayer()">Add Vector Layer</button>
+        <button id="webMapBtn" (click)="addWebElementMap()">Add Web Element</button>
+    </div>
+
+    <div id="blankDiv">
+
+    </div>
+    <div class="classDiv">
+        <div class="blankClassDiv">
+
+        </div>
+    </div>
+    <web-map *ngIf="showWebMap" 
+      featureName = "Primitive Input passed to Web component" 
+      [obj] = "webComponentInput"
+      (clickhandler)="readFromWebComponent($event)"    
+   >
+</web-map> 
+<h1 *ngIf="emittedWebComponentValue">Value : {{ emittedWebComponentValue }}</h1> 
+<label>
+    Favorite Color: <input type="text" [(ngModel)]="favoriteColor">
+</label>
+<label>
+    Name:<input type="text" [formControl]="name">
+ </label>
+<div *ngFor="let player of playersList" class="dynamicClass"> 
+    {{player}}
+   </div>
+</div>
+<app-custom-ext-module></app-custom-ext-module>

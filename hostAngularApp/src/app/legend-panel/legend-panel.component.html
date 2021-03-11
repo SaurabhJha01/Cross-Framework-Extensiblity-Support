@@ -1,0 +1,12 @@
+<div id="legendPanel">
+    <div class="selectCT">
+        <label class="label">Choose Custom Template</label>
+        <select [(ngModel)]="customTemplateType" (ngModelChange)="changeCustomTemplate()">
+            <option>Select</option>
+            <option>Pie Chart</option>
+            <option>Column Label</option>
+        </select>
+    </div>
+</div>
+<div #vcr class="customTemplate"></div>
+<app-custom-ext-module></app-custom-ext-module>

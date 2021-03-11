@@ -1,0 +1,26 @@
+#addPanel {
+    height: 100%;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+button {
+  color: #ffffff;
+  background: #8017E1;
+  width: 40%;
+  height: 7%;
+  border-radius: 5px;
+  cursor: pointer;
+}  
+
+#blankDiv {
+    margin-top: 15%;
+}
+
+.hostBtns {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-around;
+}

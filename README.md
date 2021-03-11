@@ -42,4 +42,25 @@ Web component is mainly used to reusable ui components but here it's basic natur
 is able to not only get loaded inside the angular application but also trigger its functionalities, get access to its features and even modify the behavious of the host application. So, web component has to be made singleton by applying singleton design pattern in typescript inside the web component
 
 
+/** To run the whole syatem */
+
+1. Copy paste the nodeServer application and run npm install from the directory where it is pasted
+2. The run nodemon nodeServer.js
+
+3. Got od directory where third party react application is pasted. Run npm install and then run npm run build and then npm run package.
+4. Copy the compiled and concated js file of React application into any folder and make changes in the nodejs server application according to the path (The react-web-element section of nodeJS server application needs to be modified according to the folder where this file is copied.
+)
+5.   Go to directory where hostAngularApp is pasted. Run yarn install and then yarn start to start the host angular application .React application can be seen loaded when you click the legend icon. The react application can be seen
+as modifying the hoist angular application where 3 different functionalities of host app is being used by this third party react extension.
+
+6. To also include some other Angular third party application, then go to directory where extComp has been pasted.
+  Run ng build --prod and copy its compiled contents to aany folder but make sure the cooresponding folder which has been choosen must be included in the nodeJS server application.
+
+7. To see thi third party angular application, click on the add icon and it can also be seen as interacting and modifying the default behaviour of host application.
+
+8. So, in a sinlge host application we can see both these third party applications one REact and other one Angular
+can be loaded and vapability has been provided to them to not only plug their individual capability but also use
+the host application features and even go to the extent of modifying yhe default behaviour of host application.
+
+
 

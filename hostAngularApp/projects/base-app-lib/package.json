@@ -1,0 +1,13 @@
+{
+  "name": "base-app-lib",
+  "version": "0.0.26",
+  "peerDependencies": {
+    "@angular/common": "^11.0.4",
+    "@angular/core": "^11.0.4",
+    "@ngrx/effects": "^10.1.2",
+    "@ngrx/store": "^10.1.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"  
+  }
+}

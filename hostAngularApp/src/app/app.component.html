@@ -1,0 +1,15 @@
+
+<h1> Webpack 5 Module Federation Extensibility Example     
+    <i class="fas fa-plus" (click)="openAddPanel()"></i>
+    <i class="fa fa-caret-square-o-left" (click)="openLegendPanel()"></i>
+</h1>
+ <div id="map" class="map"></div> 
+<app-add-panel *ngIf="isAddPanelOpen"></app-add-panel>
+<app-legend-panel *ngIf="isLegendPanelOpen"></app-legend-panel>
+<app-custom-ext-module></app-custom-ext-module>
+
+
+
+
+
+
