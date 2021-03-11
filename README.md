@@ -1,5 +1,7 @@
 # Cross Framework Extensiblity Support
 The sample consists of an Angular mono repo in which any third party framework application can be loaded and not only that but also the third party application is able to modify the host angular application, use its features and responds to its events.
+To have the optimize performance, the host application and the third party applications have to be compiled before they are rendered. Extensiblity has been achieved with AOT compilation and there is no need to do JIT compilation which
+lowers down the loading performance of the application.
 
 The sample consists of the below applications and files :
 BaseApp -> Angular host application

@@ -1,0 +1,19 @@
+[
+  {
+    "name": "extApp",
+    "modulePath": "extensions/extComp/aotCompiledExt.js",
+    "moduleName" : "ExtModule",
+    "parent_Placeholder" : "blankDiv",
+    "sibling_Placeholder" : "",
+    "remove_Placeholder" : ""
+  },
+  {
+    "name": "mfe4",
+    "modulePath": "extensions/extCompReact/remoteEntry.js",
+    "moduleName" : "reactSampleComponent",
+    "parent_Placeholder" : "selectCT",
+    "sibling_Placeholder" : "",
+    "remove_Placeholder" : "",
+	"webElement_name" : "mfe4-element"
+  }
+]
