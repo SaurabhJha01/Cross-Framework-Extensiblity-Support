@@ -9,6 +9,8 @@ node-js-server -> The server application which provides the compiled files of th
 CustomAnalystModuleConfig.json -> the file which contains the third party application information which would be read by node-js-server and and then pass it to host application
 to load the third party application.
 
+Use yarn to install dependencies and run the host applictaion baseApp using yarn start command and also run the node server using nodemon nodeServer.js
+
 
  Angular Host Application/Angular third party  application :
  
