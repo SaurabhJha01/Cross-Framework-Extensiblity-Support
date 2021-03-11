@@ -4,11 +4,16 @@ To have the optimize performance, the host application and the third party appli
 lowers down the loading performance of the application.
 
 The sample consists of the below applications and files :
+
 BaseApp -> Angular host application
+
 ExtComp - > Angular third party application
+
 mfe4-React -> React third party application
+
 node-js-server -> The server application which provides the compiled files of third party application to host application
-CustomAnalystModuleConfig.json -> the file which contains the third party application information which would be read by node-js-server and and then pass it to host application
+
+CustomAnalystModuleConfig.json -> The file which contains the third party application information which would be read by node-js-server and and then pass it to host application
 to load the third party application.
 
 Use yarn to install dependencies and run the host applictaion baseApp using yarn start command and also run the node server using nodemon nodeServer.js
@@ -26,7 +31,7 @@ Both the angular hot application and third party angular applications have to be
  
  React is choosen as non angular framework in this POC but it will work with any other framework like Vue also.
  The third party react application can be loaded via Web pack 5 Module federation inside the angular host application which is called BaseApp here.
- It can be also be loaded with webpack 5 Module federation support if we concat the compiled non-Angular application files into a single file usingjscat plugin
+ It can be also be loaded without webpack 5 Module federation support and in any build system if we concat the compiled non-Angular application files into a single file usingjscat plugin
  and then fed that js file to Angular host application using dynamic script.
  
 Non-angular application has to be converted into a web component and then only the host angular application is able to load them
