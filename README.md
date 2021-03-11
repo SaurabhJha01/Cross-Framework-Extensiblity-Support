@@ -1,6 +1,15 @@
 # Cross-Framework-Extensiblity-Support
 The sample consists of an Angular mono repo in which any third party framework application can be loaded and not only that but also the third party application is able to modify the host angular application, use its features and responds to its events.
 
+The sample consists of the below applications and files :
+BaseApp -> Angular host application
+ExtComp - > Angular third party application
+mfe4-React -> React third party application
+node-js-server -> The server application which provides the compiled files of third party application to host application
+CustomAnalystModuleConfig.json -> the file which contains the third party application information which would be read by node-js-server and and then pass it to host application
+to load the third party application.
+
+
  Angular Host Application/Angular third party  application :
  
 The third party angular applications can be loaded via Web pack 5 Module federation inside the angular host application which is called BaseApp here.
