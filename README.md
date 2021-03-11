@@ -55,7 +55,7 @@ it will be angular host application that needs to be developed as a collection o
 
 
 
-/** To run the whole syatem */
+/** To run the whole system */
 
 1. Copy paste the nodeServer application and run npm install from the directory where it is pasted
 2. The run nodemon nodeServer.js
