@@ -29,7 +29,7 @@ Both the angular hot application and third party angular applications have to be
  
  React is choosen as non angular framework in this POC but it will work with any other framework like Vue also.
  The third party react application can be loaded via Web pack 5 Module federation inside the angular host application which is called BaseApp here.
- It can be also be loaded with webpack 5 Module federation support if we concat the compiled non-Angular application files into a single file usingjscat plugin
+ It can be also be loaded without webpack 5 Module federation support and in any build system if we concat the compiled non-Angular application files into a single file usingjscat plugin
  and then fed that js file to Angular host application using dynamic script.
  
 Non-angular application has to be converted into a web component and then only the host angular application is able to load them
