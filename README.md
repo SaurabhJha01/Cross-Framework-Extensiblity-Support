@@ -47,7 +47,7 @@ is able to not only get loaded inside the angular application but also trigger i
 1. Copy paste the nodeServer application and run npm install from the directory where it is pasted
 2. The run nodemon nodeServer.js
 
-3. Got od directory where third party react application is pasted. Run npm install and then run npm run build and then npm run package.
+3. Go to directory where third party react application is pasted. Run npm install and then run npm run build and then npm run package.
 4. Copy the compiled and concated js file of React application into any folder and make changes in the nodejs server application according to the path (The react-web-element section of nodeJS server application needs to be modified according to the folder where this file is copied.
 )
 5.   Go to directory where hostAngularApp is pasted. Run yarn install and then yarn start to start the host angular application .React application can be seen loaded when you click the legend icon. The react application can be seen

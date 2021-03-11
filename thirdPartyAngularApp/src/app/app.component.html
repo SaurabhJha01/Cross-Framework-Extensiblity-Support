@@ -1,0 +1,15 @@
+<div class="btnContainer">
+    <button (click)="addVectorLayer()">Add Vector Layer Extension</button>
+</div>
+<div class="btnContainer">
+    <button (click)="addBaseLayer()">Add Base Layer Extension</button>
+    <button (click)="removeAllLayers()">Remove Layers Extension</button>
+</div>
+<div class="btnContainer">
+    <button (click)="addInteractionForAnnotation()">Add Annotation Interaction Extension</button>
+    <button (click)="removeInteractionForAnnotation()">Remove Annotation Interaction Extension</button> 
+</div>
+<div class="btnContainer">
+    <div><code>async pipe example</code>: Time: {{ time | async }}</div>
+</div>
+<app-accord *ngIf="geometries?.length" [geometries]="geometries" (closePanel$)= "closePanel()"></app-accord>

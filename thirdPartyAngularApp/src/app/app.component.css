@@ -1,0 +1,17 @@
+button {
+    color: #ffffff;
+    background: red;
+    width: 40%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid silver;
+}
+
+
+

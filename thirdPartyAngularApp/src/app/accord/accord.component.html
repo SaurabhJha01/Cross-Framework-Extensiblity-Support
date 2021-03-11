@@ -1,0 +1,13 @@
+
+<div class="ext-accord">
+    <a href="#" class="close" (click)="closePanel()"></a>
+    <h3>Shared Custom Accordian Component : </h3>
+    <lib-baseAppLib [collection] = "geometries" [collectionName]="'Feature'"></lib-baseAppLib>
+
+    <h3>Third Party Accordian Component :</h3>
+    <p-accordion>
+     <p-accordionTab header="Feature {{i}} Geometry" *ngFor="let geometry of geometries; let i = index">
+       {{geometry | json}}
+     </p-accordionTab>
+    </p-accordion>
+</div>

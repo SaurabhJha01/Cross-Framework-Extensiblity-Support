@@ -1,0 +1,35 @@
+.ext-accord {
+    height: 100%;
+    width: 400px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 52px;
+    overflow: auto;
+}
+h3 {
+    text-decoration: underline;
+}
+.close {
+    position: absolute;
+    right: 32px;
+    top: 12px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
