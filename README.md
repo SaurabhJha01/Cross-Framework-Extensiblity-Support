@@ -35,7 +35,7 @@ It would also be required by the angular host application web component when any
 
  Angular Host Application/Angular third party  application :
  
-The third party angular applications can be loaded via Web pack 5 Module federation inside the angular host application which is called BaseApp here.
+The third party angular applications can be loaded via Web pack 5 Module federation inside the angular host application which is called angularHostApp here.
 Through Angular libraries the host angular application  is able to share its code with the third party angular application.
 To allow third party angular application to modify the host angular application, the singleton version of angular library has to be shared.
 For that, there is a setting inside webpack config where we add the entry of the angular library and mark it as Singleton.
@@ -44,13 +44,12 @@ Both the angular hot application and third party angular applications have to be
  Angular Host Application/Non-Angular third party  application :
  
  React is choosen as non angular framework in this POC but it will work with any other framework like Vue also.
- The third party react application can be loaded via Web pack 5 Module federation inside the angular host application which is called BaseApp here.
- It can be also be loaded without webpack 5 Module federation support and in any build system if we concat the compiled non-Angular application files into a single file usingjscat plugin
- and then fed that js file to Angular host application using dynamic script.
+ The third party react application can be loaded via Web pack 5 Module federation inside the angular host application which is called angularHostApp here.
+ It can be also be loaded without webpack 5 Module federation support and in any build system if we concat the compiled non-Angular application files into a single file using jscat plugin  and then fed that js file to Angular host application using dynamic script.
  
 Non-angular application has to be converted into a web component and then only the host angular application is able to load them
 Non-angular application can communicate with angular host application and use its features or modify it through web components again. But, this time
-it will be angular host application that needs to be developed as a collection of angular web components.
+it will be angular host application that needs to be developed as a collection of angular web components wrapped aroung angulat libraries and a oberver design patter and sibgleton design pattern has to be implemented inside the web component to allow non angular third party application to get hold of hostAngular application and extends its functionalities or modify them or extend them with their own payload.
 
 
 
