@@ -1,12 +1,12 @@
 # Cross Framework Extensiblity Support
-The sample consists of an Angular mono repo in which any third party framework application can be loaded and not only that but also the third party application is able to modify the host angular application, use its features and responds to its events. So, it allowes 3rd party developers of any framework be it angular, react or vue to create their onw extensions and not only load them inside the host application but also extend the host application features like providing their own data to host application but use their
+The sample consists of an Angular mono repo in which any third party framework application can be loaded and not only that but also the third party application is able to modify the host angular application, use its features and responds to its events. So, it allowes 3rd party developers of any framework be it angular, react or vue to create their own extensions and not only load them inside the host application but also extend the host application features like providing their own data to host application but use their
 mechanism to achieve the feature or use observer design pattern and singleton design patterns to subscribe the host application features, get the result from host application and then do their own stuff. So, every sort of modification and usage of angular host application would be possible with 3rd party developers of any framework.
 
 To support extensibility between angular host application and other third party angular applications, the architecture of host angular application needs to be distributed
 across angular libraries and state management should be done by redux.
 
 However, in this sample we are not just supporting extensiblity between angular applications but have extended them to any framework and for that there needs to be extra layer 
-added in the architetcure of host angular APp which is web component. So, the host application needs to be architected based on Web component and web component acts as wrapper for Angular libraries so that any framework can communicate to host application using the web component because angular libraries can be consumed only in angular application, so, we have to bring in web component. 
+added in the architetcure of host angular app which is web component. So, the host application needs to be architected based on Web component and web component acts as wrapper for Angular libraries so that any framework can communicate to host application using the web component because angular libraries can be consumed only in angular application, so, we have to bring in web component. 
 
 web component is mainly used to create reusable ui components and not for extensiblitly but here it's basic nature had to be moulded a bit and coupled with angular library,  dom and module federation or SystemJS in order to support extensiblity.
 
@@ -30,7 +30,7 @@ to load the third party application.
 base-app-lib-0.0.26.tgz -> The angular library compiled file which needs to be installed for Angular third party application to interact with host angular application.
 It would also be required by the angular host application web component when any third party react application wants to trigger the hots application functionality.
 
-Use yarn to install dependencies and run the host applictaion baseApp using yarn start command and also run the node server using nodemon nodeServer.js
+
 
 
  Angular Host Application/Angular third party  application :
